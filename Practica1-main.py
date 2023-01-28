@@ -34,7 +34,7 @@ def operaciones():
             <label>Multiplicacion</label>
             <input type="radio"name="operaciones" value="division">
             <label>Division</label></br></br>
-            <input type="submit" value="Calcular"/></br></br> 
+            <input type="submit" value="Calcular."/></br></br> 
             </form>
         '''
     
