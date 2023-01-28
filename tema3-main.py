@@ -23,7 +23,7 @@ def numero(n):
 # Más de un parametro
 @app.route("/user/<int:id>/<string:username>")
 def usern(id, username):
-    return "ID: {} nombre: {}".format(id,username) 
+    return "Id: {} nombre: {}".format(id,username) 
 
 #Suma
 @app.route("/suma/<float:n1>/<float:n2>")

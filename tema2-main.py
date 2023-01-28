@@ -9,7 +9,7 @@ def index():
 
 @app.route("/hola")
 def hola():
-    return "Hola Guapo"
+    return "Hola Guapo."
 
 if __name__=="__main__":
     app.run(debug=True, port=3000)
