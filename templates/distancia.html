@@ -1,0 +1,44 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<h1>Distancia</h1>
+<div class="container">
+    <div class="row">
+        <form class="form-horizontal" name="form1" action="/total" method="post">
+            <div class="control-group">
+                <label for="X1" class="control-label">X1</label>
+                <div class="controls">
+                    <input type="text" name="X1" class="input-xlarge" placeholder="X1" value=""></input>
+                </div>
+            </div>
+            <div class="control-group">
+                <label for="X2" class="control-label">X2</label>
+                <div class="controls">
+                    <input type="text" name="X2" class="input-xlarge" placeholder="X2" value=""></input>
+                </div>
+            </div>
+            <div class="control-group">
+                <label for="Y1" class="control-label">Y1</label>
+                <div class="controls">
+                    <input type="text" name="Y1" class="input-xlarge" placeholder="Y1" value=""></input>
+                </div>
+            </div>
+            <div class="control-group">
+                <label for="Y2" class="control-label">Y2</label>
+                <div class="controls">
+                    <input type="text" name="Y2" class="input-xlarge" placeholder="Y2" value=""></input>
+                </div>
+            </div>
+            <div>
+                <div class="controls">
+                    <button type="subbmit" class="btn btn-default btn-primary">
+                        <i class="icon icon-white"></i>Calcular
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+{% endblock %}
