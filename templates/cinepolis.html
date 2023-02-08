@@ -1,0 +1,60 @@
+
+{% extends "Cine.html" %}
+{% block content %}
+<body style="background-image: url('../static/bootstrap/img/cine.jpg'); background-repeat: no-repeat; background-size: cover; ">
+<center><h1>Cinepolis</h1></center>
+
+<div class="container">
+    <div class="row">
+        <div class="col-6" >
+            <h3 class="text-center">Entradas</h3>
+        <form class="form-horizontal" name="form1" action="/cinepolis" method="post">
+            <div class="control-group">
+                <label for="nombre" class="control-label" color="text-white">Nombre: </label>
+                <div class="controls">
+                    <input type="text" name="nombre" class="input-xlarge"  value=""></input>
+                </div>
+            </div>
+            <div class="control-group">
+                <label for="numPersonas" class="control-label">Cantidad Compradores:</label>
+                <div class="controls">
+                    <input type="text" name="numPersonas" class="input-xlarge" placeholder="" value=""></input>
+                </div>
+            <div>
+                    <label class="form-label"><b>Tarjeta Cineco</b></label>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <label class="form-label"><b>Si</b></label>
+                    <input type="radio" name="tarjeta">
+                    <label class="form-label"><b>No</b></label>
+                    <input type="radio" name="tarjeta">
+                </div>
+                </div>
+          
+            <div class="control-group">
+                <label for="numBoletos" class="control-label">Cantidad de Boletos:</label>
+                <div class="controls">
+                    <input type="text" name="numBoletos" class="input-xlarge"  value=""></input>
+                </div>
+            </div>
+        </div>
+            <div class="col-6" >
+                <h3 class="text-center">Salidas</h3>
+                <div class="text-center">
+                    <label class="form-label"><b>Valor a pagar</b></label>
+                    <h3 class=" text-white">{{res}}</h3>
+                </div>
+            </div>
+        </div>
+        <br><br><br><br><br><br>
+        <div class="text-center">
+            <h3 >ACCIONES</h3><br>
+            <div>
+                <button type="submit" class="btn btn-success">Procesar</button>&nbsp;&nbsp;&nbsp;&nbsp;
+                <button type="submit" class="btn btn-danger">Salir</button>
+            </div>
+        </div>
+
+    </form>
+</div>
+</div>
+</body>
+{% endblock %}
