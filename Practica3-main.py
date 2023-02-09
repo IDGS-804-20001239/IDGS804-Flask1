@@ -21,10 +21,10 @@ def cineRes():
         else:
             res=int(numb)*12
             if(int(numb) > 5):
-                res= (res*.85)
+                res= res*.85
 
             elif(int(numb) == 3 | int(numb)==4 | int(numb)==5):
-                res= (res*.90)
+                res= res*.90
             else: 
                 res=res
 
