@@ -1,0 +1,146 @@
+        
+{% extends "signo.html" %}
+
+{% block content %}
+
+<center><h1>Datos Personales</h1></center>
+<div class="container">
+    <div class="row">
+        <form class="form-horizontal" name="form1" action="/datos" method="post">
+            <div class="control-group">
+                <label for="nombre" class="control-label" color="text-white">Nombre: </label>
+                <div class="controls">
+                    <input type="text" name="nombre" class="input-xlarge"  value=""></input>
+                </div>
+            </div>
+            <div class="control-group">
+                <label for="apaterno" class="control-label" color="text-white">Apaterno: </label>
+                <div class="controls">
+                    <input type="text" name="apaterno" class="input-xlarge"  value=""></input>
+                </div>
+            </div>
+            <div class="control-group">
+                <label for="amaterno" class="control-label" color="text-white">Amaterno: </label>
+                <div class="controls">
+                    <input type="text" name="amaterno" class="input-xlarge"  value=""></input>
+                </div>
+            </div>
+            
+            <h3 class="text-center">Fecha de Nacimiento</h3>
+            <form class="form-horizontal" name="form1" action="/cinepolis" method="post">
+                <div class="control-group">
+                    <label for="dia" class="control-label" color="text-white">Dia: </label>
+                    <div class="controls">
+                        <input type="text" name="dia" class="input-xlarge"  value=""></input>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label for="mes" class="control-label" color="text-white">Mes: </label>
+                    <div class="controls">
+                        <input type="text" name="mes" class="input-xlarge"  value=""></input>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label for="anio" class="control-label" color="text-white">Año </label>
+                    <div class="controls">
+                        <input type="text" name="anio" class="input-xlarge"  value=""></input>
+                    </div>
+                </div>
+                
+                <div>
+                    <center>
+                    <h3 class="text-center">Sexo</h3>
+                    <label class="form-label" ><b>Masculino</b></label>
+                    <input type="radio" name="sexo" value="m">
+                    <label class="form-label" value="m"><b>Femenino</b></label>
+                    <input type="radio" name="sexo" value="f">
+                </center>
+                </div>
+                <br><br>
+                <div class="control-group">
+                    <h3 class="text-center">Examen de 5 preguntas</h3>
+                    <div class="controls">
+                        <h5>Pregunta 1-. ¿Cuanto es 3/3?</h5>
+                        <input type="radio" name="txt1" value="m">2
+                        <br>
+    
+                        <input type="radio" name="txt1" value="m">3
+                        <br>
+    
+                        <input type="radio" name="p1" value="b">1
+                        <br>
+                        <input type="radio" name="txt1" value="m">4
+                    </div>
+                </div>
+                <br>
+                <div class="control-group">
+                    <div class="controls">
+                        <h5>Pregunta 2-. ¿Cual es la suma de 2 + 2?</h5>
+                        <input type="radio" name="txt1" value="m">13
+                        <br>
+    
+                        <input type="radio" name="txt1" value="m">2
+                        <br>
+    
+                        <input type="radio" name="txt" value="m">9
+                        <br>
+                        <input type="radio" name="p2" value="b">4
+                    </div>
+                </div>
+                <div class="control-group">
+                    <div class="controls">
+                        <h5>Pregunta 3-. ¿Cual es la √4?</h5>
+                        <input type="radio" name="p3" value="b">2
+                        <br>
+    
+                        <input type="radio" name="txt1" value="m">20
+                        <br>
+    
+                        <input type="radio" name="txt" value="m">10
+                        <br>
+                        <input type="radio" name="txt" value="m">3
+                    </div>
+                </div>
+                <div class="control-group">
+                    <div class="controls">
+                        <h5>Pregunta 4-. ¿Cual es el resultado de 5 * 10?</h5>
+                        <input type="radio" name="txt" value="m">15
+                        <br>
+    
+                        <input type="radio" name="p4" value="b">50
+                        <br>
+    
+                        <input type="radio" name="txt" value="m">10
+                        <br>
+                        <input type="radio" name="txt" value="m">5
+                    </div>
+                </div>
+                <div class="control-group">
+                    <div class="controls">
+                        <h5>Pregunta 5-. ¿Cuanto es 3 * 2 + 3?</h5>
+                        <input type="radio" name="txt" value="m">15
+                        <br>
+    
+                        <input type="radio" name="txt" value="m">50
+                        <br>
+    
+                        <input type="radio" name="p5" value="b">9
+                        <br>
+                        <input type="radio" name="txt" value="m">5
+                    </div>
+                </div>
+            <div>
+                <div class="controls">
+                    <button type="submit" class="btn btn-default btn-primary" name="limpiar" command=borrarPantalla()>
+                        <i class="icon icon-white"></i>Limpiar
+                    </button>
+                    <button type="submit" class="btn btn-default btn-primary">
+                        <i class="icon icon-white"></i>Siguiente
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+{% endblock %}
